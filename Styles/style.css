@@ -110,5 +110,35 @@ body {
   height: 42px;
   background-color: black;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .header .panel_control .pc_right_div > div {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.container .header .panel_control .pc_right_div #icon_1 {
+  background-image: url("../Medias/Icons_player/previous cirlce.svg");
+}
+
+.container .header .panel_control .pc_right_div #icon_2 {
+  background-image: url("../Medias/Icons_player/play.svg");
+}
+
+.container .header .panel_control .pc_right_div #icon_3 {
+  background-image: url("../Medias/Icons_player/next circle.svg");
 }
 /*# sourceMappingURL=style.css.map */

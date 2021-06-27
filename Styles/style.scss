@@ -79,6 +79,28 @@ body{
                 height: 42px;
                 background-color: black;
                 border-radius: $borderradius;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                >div{
+                    width: 36px;
+                    height: 36px;
+                    // background-color: white;
+                    border-radius: $borderradius;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    cursor: pointer;
+                }
+                #icon_1{
+                    background-image: url("../Medias/Icons_player/previous\ cirlce.svg");
+                }
+                #icon_2{
+                    background-image: url("../Medias/Icons_player/play.svg");
+                }
+                #icon_3{
+                    background-image: url("../Medias/Icons_player/next\ circle.svg");
+                }
             }
         }
     }
