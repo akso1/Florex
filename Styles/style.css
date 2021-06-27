@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 body {
   background-color: #121212;
 }
@@ -158,6 +162,47 @@ body {
   width: 250px;
   height: 100%;
   background-color: #181818;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.container .main .lists_playlist .list_pd {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main .lists_playlist .list_pd > ul {
+  color: white;
+}
+
+.container .main .lists_playlist .list_pd > ul > p {
+  color: #00ffd9;
+  margin-bottom: 10px;
+}
+
+.container .main .lists_playlist .list_pd > ul > li {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.container .main .lists_playlist .picture_group {
+  width: 100%;
+  height: 150px;
+  background-color: black;
   border-radius: 10px;
 }
 
