@@ -182,6 +182,7 @@ body {
 .container .main .lists_playlist .list_pd {
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 .container .main .lists_playlist .list_pd > ul {
@@ -211,5 +212,60 @@ body {
   height: 100%;
   background-color: #181818;
   border-radius: 10px;
+  padding: 10px;
+}
+
+.container .main .lists_music .music_div {
+  width: 100%;
+  height: 54px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+.container .main .lists_music .music_div .left_md {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+}
+
+.container .main .lists_music .music_div .left_md .play_btn {
+  width: 42px;
+  height: 42px;
+  background-image: url("../Medias/Icons_player/play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.container .main .lists_music .music_div .left_md .icon_music {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #00ffd9;
+  margin-left: 10px;
+}
+
+.container .main .lists_music .music_div .left_md .namemusic {
+  color: white;
+  margin-left: 10px;
+}
+
+.container .main .lists_music .music_div:hover {
+  border-color: #00ffd9;
 }
 /*# sourceMappingURL=style.css.map */
