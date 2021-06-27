@@ -53,6 +53,7 @@ body{
             border-radius: $borderradius;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             padding: 0 10px;
             .pc_left_div{
                 display: flex;
@@ -72,6 +73,12 @@ body{
                         font-size: 16px;
                     }
                 }
+            }
+            .pc_right_div{
+                width: 234px;
+                height: 42px;
+                background-color: black;
+                border-radius: $borderradius;
             }
         }
     }
