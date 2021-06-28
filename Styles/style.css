@@ -375,6 +375,10 @@ body {
   cursor: pointer;
 }
 
+.container .main .lists_music .content_music .music_div + .music_div {
+  margin-top: 10px;
+}
+
 .container .main .lists_music .content_music .music_div:hover {
   border-color: #00ffd9;
 }
