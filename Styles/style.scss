@@ -49,6 +49,46 @@ body{
                 height: 42px;
                 background-color: $lbc;
                 border-radius: $borderradius;
+                position: relative;
+                cursor: pointer;
+                .menu_profile{
+                    width: 260px;
+                    height: auto;
+                    background-color: black;
+                    position: absolute;
+                    border-left: 1px solid $lbc;
+                    border-radius: 0 10px 10px 0;
+                    padding: 20px 10px;
+                    top: 60px;
+                    left: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    
+                    >ul{
+                        width: 100%;
+                        >li{
+                            color: white;
+                            border: 1px solid white;
+                            padding: 5px 10px;
+                            cursor: pointer;
+                            transition: 0.5s;
+                            &+li{
+                                margin-top: 10px;
+                            }
+                            &:hover{
+                                border-color: $lbc;
+                                color: $lbc;
+                                box-shadow: -20px  0px 0px rgba(0, 255, 217, 1) inset;
+                                
+                            }
+                            &:last-child:hover{
+                                border-color: red;
+                                color: red;
+                                box-shadow: -20px  0px 0px rgb(255, 0, 0) inset;
+                            }
+                        }
+                    }
+                }
             }
             >p{
                 color: white;
@@ -129,6 +169,14 @@ body{
             flex-direction: column;
             align-items: center;
             padding: 10px;
+            position: relative;
+            .name_teg_lp{
+                position: absolute;
+                font-size: 20px;
+                color: #009e86;
+                top: -30px;
+                left: 0;
+            }
             .list_pd{
                 width: 100%;
                 height: 100%;
@@ -137,12 +185,21 @@ body{
                     >p{
                         color: $lbc;
                         margin-bottom: 10px;
+                        font-size: 20px;
                     }
                     color: white;
                     >li{
                         margin-left: 10px;
                         margin-bottom: 5px;
                         cursor: pointer;
+                        transition: 0.5s;
+                        padding: 5px 10px;
+                        border-radius: 5px 0 0 5px;
+                        &:hover{
+                            color: black;
+                            box-shadow: -250px  0px 0px rgba(0, 255, 217, 1) inset;
+                            
+                        }
                     }
                 }
             }
@@ -159,6 +216,14 @@ body{
             background-color: #181818;
             border-radius: $borderradius;
             padding: 10px;
+            position: relative;
+            .name_teg_lm{
+                position: absolute;
+                font-size: 20px;
+                color: #009e86;
+                top: -30px;
+                left: 0;
+            }
             .music_div{
                 width: 100%;
                 height: 48px;
@@ -177,10 +242,11 @@ body{
                         height: 38px;
                         @include imagecenter("../Medias/Icons_player/play.svg");
                         cursor: pointer;
+                        filter: invert(1);
                     }
                     .icon_music{
-                        width: 38px;
-                        height: 38px;
+                        width: 30px;
+                        height: 30px;
                         border-radius: $borderradius;
                         background-color: $lbc;
                         margin-left: 10px;
@@ -188,6 +254,23 @@ body{
                     .namemusic{
                         color: white;
                         margin-left: 10px;
+                    }
+                }
+                .right_md{
+                    display: flex;
+                    align-items: center;
+                    .date_add{
+                        color: white;
+                        border-right: 1px solid white;
+                        padding-right: 10px;
+                    }
+                    .add_like{
+                        width: 24px;
+                        height: 24px;
+                        @include imagecenter("../Medias/Icons_player/plus.png");
+                        filter: invert(1);
+                        margin-left: 10px;
+                        cursor: pointer;
                     }
                 }
                 &:hover{
