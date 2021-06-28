@@ -161,7 +161,7 @@ body{
             padding: 10px;
             .music_div{
                 width: 100%;
-                height: 54px;
+                height: 48px;
                 border: 1px solid white;
                 border-radius: $borderradius;
                 display: flex;
@@ -173,14 +173,14 @@ body{
                     align-items: center;
                     display: flex;
                     .play_btn{
-                        width: 42px;
-                        height: 42px;
+                        width: 38px;
+                        height: 38px;
                         @include imagecenter("../Medias/Icons_player/play.svg");
                         cursor: pointer;
                     }
                     .icon_music{
-                        width: 42px;
-                        height: 42px;
+                        width: 38px;
+                        height: 38px;
                         border-radius: $borderradius;
                         background-color: $lbc;
                         margin-left: 10px;
