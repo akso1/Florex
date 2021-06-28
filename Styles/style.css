@@ -74,6 +74,7 @@ body {
   left: 0;
   overflow: hidden;
   visibility: hidden;
+  z-index: 2;
 }
 
 .container .header .profile .picture_profile .menu_profile > ul {
@@ -281,6 +282,8 @@ body {
   border-radius: 10px;
   padding: 10px;
   position: relative;
+  border-top: 1px solid rgba(0, 255, 217, 0.5);
+  border-bottom: 1px solid rgba(0, 255, 217, 0.5);
 }
 
 .container .main .lists_music .name_teg_lm {
@@ -291,7 +294,7 @@ body {
   left: 0;
 }
 
-.container .main .lists_music .music_div {
+.container .main .lists_music .content_music .music_div {
   width: 100%;
   height: 48px;
   border: 1px solid white;
@@ -306,9 +309,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px;
+  overflow: auto;
 }
 
-.container .main .lists_music .music_div .left_md {
+.container .main .lists_music .content_music .music_div .left_md {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,7 +322,7 @@ body {
   display: flex;
 }
 
-.container .main .lists_music .music_div .left_md .play_btn {
+.container .main .lists_music .content_music .music_div .left_md .play_btn {
   width: 38px;
   height: 38px;
   background-image: url("../Medias/Icons_player/play.svg");
@@ -330,7 +334,7 @@ body {
           filter: invert(1);
 }
 
-.container .main .lists_music .music_div .left_md .icon_music {
+.container .main .lists_music .content_music .music_div .left_md .icon_music {
   width: 30px;
   height: 30px;
   border-radius: 10px;
@@ -338,12 +342,12 @@ body {
   margin-left: 10px;
 }
 
-.container .main .lists_music .music_div .left_md .namemusic {
+.container .main .lists_music .content_music .music_div .left_md .namemusic {
   color: white;
   margin-left: 10px;
 }
 
-.container .main .lists_music .music_div .right_md {
+.container .main .lists_music .content_music .music_div .right_md {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,13 +356,13 @@ body {
           align-items: center;
 }
 
-.container .main .lists_music .music_div .right_md .date_add {
+.container .main .lists_music .content_music .music_div .right_md .date_add {
   color: white;
   border-right: 1px solid white;
   padding-right: 10px;
 }
 
-.container .main .lists_music .music_div .right_md .add_like {
+.container .main .lists_music .content_music .music_div .right_md .add_like {
   width: 24px;
   height: 24px;
   background-image: url("../Medias/Icons_player/plus.png");
@@ -371,7 +375,7 @@ body {
   cursor: pointer;
 }
 
-.container .main .lists_music .music_div:hover {
+.container .main .lists_music .content_music .music_div:hover {
   border-color: #00ffd9;
 }
 /*# sourceMappingURL=style.css.map */

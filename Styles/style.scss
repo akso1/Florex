@@ -63,6 +63,7 @@ body{
                     left: 0;
                     overflow: hidden;
                     visibility: hidden;
+                    z-index: 2;
                     
                     >ul{
                         width: 100%;
@@ -217,6 +218,8 @@ body{
             border-radius: $borderradius;
             padding: 10px;
             position: relative;
+            border-top: 1px solid rgba(0, 255, 217, 0.5);
+            border-bottom: 1px solid rgba(0, 255, 217, 0.5);
             .name_teg_lm{
                 position: absolute;
                 font-size: 20px;
@@ -224,57 +227,60 @@ body{
                 top: -30px;
                 left: 0;
             }
-            .music_div{
-                width: 100%;
-                height: 48px;
-                border: 1px solid white;
-                border-radius: $borderradius;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 10px;
-                .left_md{
+            .content_music{
+                .music_div{
+                    width: 100%;
+                    height: 48px;
+                    border: 1px solid white;
+                    border-radius: $borderradius;
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
-                    display: flex;
-                    .play_btn{
-                        width: 38px;
-                        height: 38px;
-                        @include imagecenter("../Medias/Icons_player/play.svg");
-                        cursor: pointer;
-                        filter: invert(1);
+                    padding: 0 10px;
+                    overflow: auto;
+                    .left_md{
+                        display: flex;
+                        align-items: center;
+                        display: flex;
+                        .play_btn{
+                            width: 38px;
+                            height: 38px;
+                            @include imagecenter("../Medias/Icons_player/play.svg");
+                            cursor: pointer;
+                            filter: invert(1);
+                        }
+                        .icon_music{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: $borderradius;
+                            background-color: $lbc;
+                            margin-left: 10px;
+                        }
+                        .namemusic{
+                            color: white;
+                            margin-left: 10px;
+                        }
                     }
-                    .icon_music{
-                        width: 30px;
-                        height: 30px;
-                        border-radius: $borderradius;
-                        background-color: $lbc;
-                        margin-left: 10px;
+                    .right_md{
+                        display: flex;
+                        align-items: center;
+                        .date_add{
+                            color: white;
+                            border-right: 1px solid white;
+                            padding-right: 10px;
+                        }
+                        .add_like{
+                            width: 24px;
+                            height: 24px;
+                            @include imagecenter("../Medias/Icons_player/plus.png");
+                            filter: invert(1);
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
                     }
-                    .namemusic{
-                        color: white;
-                        margin-left: 10px;
+                    &:hover{
+                        border-color: $lbc;
                     }
-                }
-                .right_md{
-                    display: flex;
-                    align-items: center;
-                    .date_add{
-                        color: white;
-                        border-right: 1px solid white;
-                        padding-right: 10px;
-                    }
-                    .add_like{
-                        width: 24px;
-                        height: 24px;
-                        @include imagecenter("../Medias/Icons_player/plus.png");
-                        filter: invert(1);
-                        margin-left: 10px;
-                        cursor: pointer;
-                    }
-                }
-                &:hover{
-                    border-color: $lbc;
                 }
             }
         }
